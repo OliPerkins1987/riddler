@@ -73,7 +73,7 @@ while(a.score < 5 & b.score < 5) {
 }
 
 
-results.25 <- lapply(rep(0.001, times = 1000), function(x) {HORSE(x)})
+results.25 <- lapply(rep(0.25, times = 1000), function(x) {HORSE(x)})
 
 sum(unlist(lapply(results.25, function(x) {which(x[[1]] == 5)}))) / 1000
 
